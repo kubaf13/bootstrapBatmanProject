@@ -1,0 +1,73 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1920px;
+
+    margin: 0 auto;
+}
+
+#questions .accordion-button {
+    background-color: #FFC105;
+}
+
+#questions .accordion-item {
+    background-color: #212528;
+}
+
+
+.hamburger {
+    border: none
+}
+
+@media(max-width: 768px){
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .symbol img{
+        max-width: 50%;
+    }
+}
+
+@media(min-width: 768px){
+    .news-input{
+        width: 50%;
+    }
+
+    .gallery {
+        flex-direction: row;
+    }
+
+    #symbol {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #symbol img,
+    #batmobile img {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 990px) {
+    .hamburger {
+    display: none;
+    }
+
+    .news-input{
+        max-width: 400px;
+    }
+}
+
+.description {
+    max-width: 800px;
+}
